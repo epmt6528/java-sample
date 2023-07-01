@@ -22,4 +22,13 @@ public class MethodChallenge {
             return 4;
         }
     }
+
+    public static double convertToCentimeters(int inches) {
+        return inches * 2.54;
+    }
+
+    public static double convertToCentimeters(int feet, int inches) {
+         int total = feet * 12 + inches;
+         return convertToCentimeters(total);
+    }
 }
